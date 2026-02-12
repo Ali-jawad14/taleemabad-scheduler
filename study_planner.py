@@ -8,7 +8,7 @@ import random
 import time
 
 # --- 1. CONFIGURATION ---
-api_key = "Your api key" 
+api_key = st.secrets["GOOGLE_API_KEY"]" 
 
 # Configure AI
 genai.configure(api_key=api_key)
@@ -360,3 +360,4 @@ if submitted:
                     st.markdown("#### 🧘 Recovery Phase")
 
                     st.success(f"**Technique:** {day.get('break', 'Rest')}")
+
