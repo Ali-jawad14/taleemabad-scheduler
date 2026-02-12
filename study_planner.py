@@ -8,7 +8,7 @@ import random
 import time
 
 # --- 1. CONFIGURATION ---
-api_key = "AIzaSyANib5vp84TaNvxFRrHspFRRqE0R3l2V58" 
+api_key = "Your api key" 
 
 # Configure AI
 genai.configure(api_key=api_key)
@@ -358,4 +358,5 @@ if submitted:
                     
                     st.markdown("---")
                     st.markdown("#### 🧘 Recovery Phase")
+
                     st.success(f"**Technique:** {day.get('break', 'Rest')}")
